@@ -1,9 +1,56 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-	<script src="index.js"></script>
-    </body>
-</html>
 
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Jimmy´s Diner</h1>
+            <h2>The best burgers and pizzas in town</h2>
+        </header>
+        <section id="foodList">
+         
+        </section>
+        <footer id="orderSummary">
+            <h3 id="orderHeadline">Your order</h3>
+            <div id="orderOverview">
+                <div id="orderItemsContainer">
+                 
+                   
+                </div>
+                <hr>
+                <div id="grandTotal" class="flex">
+                    <h3>Total Price</h3>
+                    <h4 id="totalPrice">$0</h4>
+                </div>
+                <button id="checkoutBtn">Complete Order</button>
+            </div>
+        </footer>
+        <p id="confirmationMsg">
+            Thank you Johe! Its on its way!
+        </>
+        <div id="modalFade"></div>
+        <div id="modal">
+            <p>Enter Card details</p>
+            <form method="post">
+                <div class="input-container flex">
+                    <input class="custom-input" type="text" id="name" name="name" required placeholder="Enter your name">
+                    <input class="custom-input" type="text" id="creditcard" name="creditcard" required placeholder="Enter card number">
+                    <input class="custom-input" type="password" id="cvv" name="cvv" required placeholder="Enter CVV">
+                </div>
+                <input type="submit" value="Pay" id="payBtn">
+            </form>
+        </div>
+    </div>
+   
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -13,6 +13,13 @@ const menuArray = [
         emoji: "🍔",
         id: 1
     },
+    {
+        name: "Kebab",
+        ingredients: ["beef", "cheese", "lettuce", "garlic"],
+        price: 4,
+        emoji: "🥙",
+        id: 3
+    },
         {
         name: "Beer",
         ingredients: ["grain, hops, yeast, water"],
@@ -21,3 +28,5 @@ const menuArray = [
         id: 2
     }
 ]
+
+export default menuArray
